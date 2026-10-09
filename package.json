@@ -5,7 +5,7 @@
   "license": "ISC",
   "author": "Marcos Batallan",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
     "start:local": "node --env-file=.env src/index.js",

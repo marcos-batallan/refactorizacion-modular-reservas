@@ -26,7 +26,7 @@ function crearApp({ servicioReservas, formatoRegistro }) {
   app.set("layout", "layouts/main");
 
   // --- Pipeline global ---
-  app.use(morgan("formatoRegistro")); // Middleware de terceros: registra cada solicitud en consola.
+  app.use(morgan(formatoRegistro)); // Middleware de terceros: registra cada solicitud en consola.
   app.use(crearIdentificadorSolicitud()); // Middleware personalizado global #1.
   app.use(medirDuracion); // Middleware personalizado global #2.
   app.use(expressLayouts); // Habilita el layout principal para las vistas EJS.
